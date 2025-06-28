@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div class="screen" id="welcomeScreen">
+    <h1 class="fancy">Hoo! Welcome, Beautiful Soul 💖</h1>
+    <p class="soft-text">Before we continue, tell me your boyfriend's name:</p>
+    <input type="text" id="nameInput" placeholder="Enter name..." />
+    <button onclick="checkName()">Submit</button>
+    <p id="errorMsg"></p>
+  </div>
+
+  <!-- Envelope Gallery -->
+  <div class="screen" id="galleryScreen" style="display: none;">
+    <div class="envelope" onclick="openEnvelope()">
+      <div class="flap"></div>
+      <div class="closed-message">Click here for a surprise!</div>
+      <div class="letter">
+        <img id="photo" src="" alt="Memory" style="display: none;" />
+        <p id="caption" style="display: none;"></p>
+      </div>
+    </div>
+    <button onclick="nextPhoto()" id="nextBtn" style="display: none;">Next</button>
+  </div>
+
+  <!-- Love Letter Screen -->
+  <div class="screen" id="loveLetterScreen" style="display: none;">
+    <h2 class="fancy">My Love Letter to You ❤️</h2>
+    <p>
+      Through every photo, every laugh, and every shared dream, I've fallen more in love with you.
+      You are my home, my smile, my forever. Thank you for being mine.
+    </p>
+    <button onclick="showFinalMessage()">Continue</button>
+  </div>
+
+  <!-- Final Message Screen -->
+  <div class="screen" id="finalScreen" style="display: none;">
+    <h1 class="fancy">To My Forever Person 🌅</h1>
+    <p>
+      This may be the end of the website,<br />
+      But for us… it’s just the beginning.<br /><br />
+      ಕೆಳಿಲ್ಲ ನಾ ಹಾ ಬ್ರಹ್ಮನನು ಆದರೆ ನಿಡಿರುವನು ನಿನನು <br/>
+ಯಾವ ಜನ್ಮದ ಪುಣ್ಯವೋ ನಾನವಳು ಎನಬಹುದು ನಿನನು <br/>
+ಅಲೆ ಇರದೇ ಹೇಗೆ ಕಡಲು ಇರುವುದಿಲ್ಲವೋ ಹಾಗೆ ನಾನಿರಲಾರೆ ಇರದೇ ನಿನು <br/>
+ನನ್ನ ಜೀವನ ಪೂರ್ಣವಾಗದು,ನನ್ನ ಜೊತೆಗೆ ಇರದೇ ನಿನು <br/>
+ನನ್ನ ಎದೆ ಬಡಿತವೂ ಇರದು, ನಿನ್ನ ಸಂಗವಿಲ್ಲದೆ <br/>
+
+      Will you walk with me, laugh with me, cry with me, and love me — for the rest of our lives?<br /><br />
+      Happy Birthday, my love. 💍❤️<br/>
+      ಐ ಲವ್ ಯು💖👩‍❤️‍👨🫶
+
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
